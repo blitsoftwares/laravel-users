@@ -16,17 +16,11 @@ Blit\Users\Providers\UserServiceProvider::class,
 Mude o provider User para model do modulo
 
 ```
-
 'providers' => [
     'users' => [
         'driver' => 'eloquent',
         'model' => Blit\Users\Models\User::class,
     ],
-
-    // 'users' => [
-    //     'driver' => 'database',
-    //     'table' => 'users',
-    // ],
 ]
 
 ```
