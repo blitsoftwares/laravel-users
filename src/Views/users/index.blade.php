@@ -24,7 +24,7 @@
                         <td>{{ $obj->id }}</td>
                         <td>{{ $obj->name }}</td>
                         <td>{{ $obj->email }}</td>
-                        <td>{{ $obj->active ? 'Yes': 'No' }}</td>
+                        <td>{{ $obj->active ? 'Sim': 'Não' }}</td>
                         <td>
                             <form action="{{ route('users.destroy',$obj->id) }}" method="POST">
                                 <div class="btn-group btn-group-sm">

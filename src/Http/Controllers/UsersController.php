@@ -25,6 +25,8 @@ class UsersController extends Controller{
     {
         $input = $request->all();
 
+        $input['password'] = bcrypt($input['password']);
+
         User::create($input);
 
         return redirect(route('users.index'));
@@ -38,7 +40,11 @@ class UsersController extends Controller{
 
     public function update(Request $request, User $user)
     {
-        $user->update($request->all());
+        $input = $request->all();
+
+        $input['password'] = ($input['password'] == null) ? $user->password : bcrypt($input['password']);
+
+        $user->update($input);
 
         return redirect(route('users.index'));
     }
