@@ -5,7 +5,8 @@ CRUD de usuários para o Laravel 5+
 
 Em config > auth.php mude o provider User para model do modulo
 
-``
+```
+
 'providers' => [
     'users' => [
         'driver' => 'eloquent',
@@ -17,6 +18,7 @@ Em config > auth.php mude o provider User para model do modulo
     //     'table' => 'users',
     // ],
 ]
+
 ```
 
 
