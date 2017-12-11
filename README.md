@@ -3,7 +3,17 @@ CRUD de usuários para o Laravel 5+
 
 ## Instalação
 
-Em config > auth.php mude o provider User para model do modulo
+### config > app.php
+
+Adicione o provider
+
+```
+Blit\Users\Providers\UserServiceProvider::class,
+```
+
+### config > auth.php
+
+Mude o provider User para model do modulo
 
 ```
 
