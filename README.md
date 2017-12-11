@@ -1,6 +1,9 @@
 # laravel-users
 CRUD de usuários para o Laravel 5+
 
+Quando se inicia um projeto no Laravel, executa-se o comando make:auth para criar a a autenticação, porém não existe um crud com views completas.
+Este pacote faz isso. Um crud padrão para manipular usuários no laravel, básico.
+
 ## Instalação
 
 ### config > app.php
@@ -25,4 +28,8 @@ Mude o provider User para model do modulo
 
 ```
 
+## Rota
 
+Uma vez implantado, está disponível a rota
+
+- /users
